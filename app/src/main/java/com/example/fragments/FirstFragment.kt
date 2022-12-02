@@ -33,7 +33,8 @@ class FirstFragment : Fragment() {
     }
 
     private fun onClick(position:Int) {
-        findNavController().navigate(R.id.secondFragment, bundleOf("key" to list[position]))
+      //  findNavController().navigate(R.id.secondFragment, bundleOf("key" to list[position]))
+        findNavController().navigate(FirstFragmentDirections.actionFirstFragmentToSecondFragment(list[position]))
 
 
     }
